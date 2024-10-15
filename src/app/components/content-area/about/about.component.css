@@ -1,0 +1,59 @@
+.about-section {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9; /* Light background for card */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the card */
+  max-width: 1000px; /* Set a maximum width for the card */
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* Left section */
+.about-left {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.about-left h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.about-left p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Right section */
+.about-right {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.about-right h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.about-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-right ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.about-right ul li strong {
+  margin-right: 10px;
+}

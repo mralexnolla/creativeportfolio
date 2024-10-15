@@ -1,0 +1,49 @@
+/* Portfolio Section */
+.portfolio-section {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.portfolio-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Portfolio Filters */
+.portfolio-filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background-color: #28a745; /* Active green color */
+  color: white;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-gap: 20px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

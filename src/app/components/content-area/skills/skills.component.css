@@ -1,0 +1,55 @@
+/* Skills Section */
+.skills-section {
+  margin-top: 40px; /* Add space below the About section */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skills-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Skills Grid for Two Columns */
+.skills-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Each Skill Item */
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 45%; /* Two columns */
+  margin-bottom: 20px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  flex: 1;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin: 0 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #28a745; /* Green progress fill */
+  border-radius: 5px;
+}
+
+.skill-percent {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
