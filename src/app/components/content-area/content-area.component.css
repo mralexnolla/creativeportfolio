@@ -1,0 +1,472 @@
+.about-section {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9; /* Light background for card */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the card */
+  max-width: 1000px; /* Set a maximum width for the card */
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* Left section */
+.about-left {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.about-left h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.about-left p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Right section */
+.about-right {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.about-right h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.about-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-right ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.about-right ul li strong {
+  margin-right: 10px;
+}
+
+/* Skills Section */
+.skills-section {
+  margin-top: 40px; /* Add space below the About section */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skills-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Skills Grid for Two Columns */
+.skills-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Each Skill Item */
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 45%; /* Two columns */
+  margin-bottom: 20px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  flex: 1;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin: 0 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #28a745; /* Green progress fill */
+  border-radius: 5px;
+}
+
+.skill-percent {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.portfolio-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Portfolio Filters */
+.portfolio-filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background-color: #28a745; /* Active green color */
+  color: white;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-gap: 20px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Work Experience Section */
+.work-experience-section {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.work-experience-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Each Experience Item */
+.experience-item {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.experience-left {
+  background-color: #28a745; /* Green background */
+  color: white;
+  padding: 20px;
+  width: 30%; /* Left section takes 30% of the width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-left p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.experience-left h3 {
+  margin: 10px 0 0 0;
+  font-size: 18px;
+}
+
+.experience-right {
+  padding: 20px;
+  width: 70%; /* Right section takes 70% of the width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experience-right h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.experience-right p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Education Section */
+.education-section {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.education-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Each Education Item */
+.education-item {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.education-left {
+  background-color: #28a745; /* Green background */
+  color: white;
+  padding: 20px;
+  width: 30%; /* Left section takes 30% of the width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-left p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.education-left h3 {
+  margin: 10px 0 0 0;
+  font-size: 18px;
+}
+
+.education-right {
+  padding: 20px;
+  width: 70%; /* Right section takes 70% of the width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.education-right h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.education-right em {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.education-right p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* References Section */
+.references-section {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.references-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Reference Item */
+.reference-item {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+}
+
+.reference-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.reference-left img {
+  border-radius: 50%; /* Make the image circular */
+  width: 100px;
+  height: 100px;
+}
+
+.reference-left h3 {
+  margin: 10px 0 0 0;
+  font-size: 18px;
+}
+
+.reference-left p {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Reference Right Section */
+.reference-right {
+  text-align: left;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.reference-right p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Pagination Dots */
+.reference-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.pagination-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.pagination-dot.active {
+  background-color: #28a745;
+}
+
+/* Contact Section with Map Background */
+.contact-section {
+  margin-top: 40px;
+  padding: 40px;
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1523623169910-dad45c0fd21c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Example map image */
+  background-size: cover;
+  background-position: center;
+  min-height: 500px; /* Ensure the section takes enough height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.contact-section h2 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  z-index: 2; /* Ensure the title is on top */
+}
+
+/* Contact Container - Overlaid on the Map */
+.contact-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+  z-index: 2; /* Ensure it's above the background */
+}
+
+/* Contact Form */
+.contact-form {
+  width: 60%;
+  padding: 20px;
+}
+
+.contact-form h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+.send-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  background-color: #218838;
+}
+
+/* Contact Info */
+.contact-info {
+  width: 35%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.contact-info strong {
+  font-size: 16px;
+  color: #333;
+}

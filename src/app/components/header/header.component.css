@@ -1,0 +1,123 @@
+/* Background image styling */
+.background-image {
+  background-image: url('https://images.unsplash.com/photo-1520045121046-f489e3dd833f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGJyaWRnZXxlbnwwfHwwfHx8MA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Logo */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navigation */
+.navigation {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navigation ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Profile Section */
+.profile-section {
+  text-align: center;
+  color: white;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Action Buttons */
+.action-buttons button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.action-buttons button:hover {
+  background-color: #218838;
+}
+
+/* Social Icons Container */
+.social-icons {
+  position: absolute; /* Position relative to the header */
+  bottom: -30px; /* Move the icons below the header baseline */
+  left: 50%;
+  transform: translateX(-50%); /* Center the icons horizontally */
+  display: flex;
+  gap: 20px; /* Add space between the icons */
+}
+
+/* Style for each social icon link */
+.social-icons a {
+  background-color: grey; /* Grey circle background */
+  color: white; /* White icon color */
+  border-radius: 50%; /* Make it a circle */
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 24px; /* Icon size */
+  position: relative; /* Needed for absolute positioning of the icons */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for better effect */
+}
+
+/* Ensuring the icons appear inside the circle */
+.social-icons i {
+  position: relative;
+  z-index: 2; /* Ensure the icon is on top of the circle */
+}
+
+/* Positioning the circles so that half appears outside the header */
+.social-icons a::before {
+  content: '';
+  position: absolute;
+  /* bottom: -30px; Adjust this value if needed */
+  width: 50px;
+  height: 30px;
+  background-color: grey; /* Same as circle color */
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  z-index: 1;
+}

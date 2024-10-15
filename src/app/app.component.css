@@ -1,0 +1,20 @@
+/* Main layout for header, content, and footer */
+.main-layout {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align items horizontally */
+  justify-content: flex-start;
+  width: 100%; /* Take full width */
+}
+
+
+app-content-area {
+  width: 100%;
+  max-width: 1200px; /* Optional: You can set a max-width for better central alignment */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+app-header, app-footer {
+  width: 100%;
+}
