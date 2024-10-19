@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
-    @Input() userDetails: {name: string; title: string; description: string }
+    @Input() userDetails!: {name: string; title: string; description: string }
 }

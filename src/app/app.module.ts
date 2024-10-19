@@ -13,6 +13,7 @@ import { WorkExperienceComponent } from './components/content-area/work-experien
 import { EducationComponent } from './components/content-area/education/education.component';
 import { ReferencesComponent } from './components/content-area/references/references.component';
 import { ContactComponent } from './components/content-area/contact/contact.component';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {path: '', redirectTo: '/about', pathMatch: 'full'},
@@ -42,7 +43,8 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    FormsModule,
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]
